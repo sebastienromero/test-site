@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}Qui suis‑je ? | Prof particulier{% endblock %}
+{% block content %}
+<h1>Qui suis‑je ?</h1>
+<p>Passionné(e) par la transmission des sciences, j'accompagne les élèves pour développer rigueur, autonomie et confiance.</p>
+<h2>Parcours</h2>
+<ul>
+    <li>Formation : (à compléter)</li>
+    <li>Expérience : (nombre d'années / élèves accompagnés)</li>
+    <li>Spécialités : Algèbre, Analyse, Physique, Méthodologie</li>
+</ul>
+<h2>Approche pédagogique</h2>
+<p>Clarté des explications, verbalisation du raisonnement, schémas visuels et entraînement espacé.</p>
+<p><a href="{{ url_for('contact') }}" class="btn secondary">Discuter de vos besoins</a></p>
+{% endblock %}

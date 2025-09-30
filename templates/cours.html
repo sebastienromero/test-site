@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block title %}Cours | Math & Physique-Chimie{% endblock %}
+{% block content %}
+<h1>Cours proposés</h1>
+<p>Niveaux couverts : Collège, Lycée (Seconde, Première, Terminale), préparation examens / bac.</p>
+
+<h2>Format</h2>
+<ul>
+    <li>En ligne (visioconférence + tableau numérique)</li>
+    <li>À domicile (selon localisation)</li>
+    <li>Suivi régulier ou renforcement ponctuel</li>
+</ul>
+
+<h2>Méthodologie</h2>
+<ol>
+    <li>Évaluation initiale</li>
+    <li>Plan de progression personnalisé</li>
+    <li>Entraînement ciblé (exercices gradués)</li>
+    <li>Retour & consolidation</li>
+</ol>
+
+<h2>Tarifs (exemple – à ajuster)</h2>
+<ul>
+    <li>Collège : 30€ / h</li>
+    <li>Lycée : 35€ / h</li>
+    <li>Pack 10h : -10%</li>
+</ul>
+
+<p><a href="{{ url_for('contact') }}" class="btn primary">Poser une question</a></p>
+{% endblock %}

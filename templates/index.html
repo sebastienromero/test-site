@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block title %}Accueil | Cours de Math & Physique{% endblock %}
+{% block content %}
+<section class="hero mega-hero">
+    <div class="hero-inner">
+        <h1>🌼 Apprendre avec Sourire & Curiosité 🐾</h1>
+        <p class="subtitle">Maths & Physique‑Chimie boostées par une pédagogie vivante (et quelques chats).</p>
+        <div class="cta-group">
+            <a href="{{ url_for('cours') }}" class="btn primary pulse">Voir les cours 🌸</a>
+            <a href="{{ url_for('contact') }}" class="btn secondary rainbow-border">Je pose une question 🐱</a>
+        </div>
+        <div class="floating-cats" aria-hidden="true">
+            <span>🐱</span><span>🌸</span><span>🐾</span><span>🌼</span><span>🐈</span><span>💮</span>
+        </div>
+    </div>
+</section>
+<section class="points vibrant-cards">
+    <h2 class="section-title">Ce qu'on construit ensemble 🌈</h2>
+    <div class="grid-3 playful-grid">
+        <div class="card burst">
+            <h3>🔍 Diagnostic</h3>
+            <p>On repère les forces & zones à muscler rapidement.</p>
+        </div>
+        <div class="card burst delay1">
+            <h3>🧠 Méthode</h3>
+            <p>Raisonnement clair, rédaction efficace, autonomie.</p>
+        </div>
+        <div class="card burst delay2">
+            <h3>🚀 Préparation</h3>
+            <p>Contrôles, examens, objectifs personnels: on planifie.</p>
+        </div>
+    </div>
+</section>
+{% endblock %}

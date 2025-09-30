@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}Contact | Cours particuliers{% endblock %}
+{% block content %}
+<h1>Contact</h1>
+<p>Utilisez ce formulaire pour une question, un premier échange ou une demande de créneau.</p>
+<form method="post" class="contact-form">
+    <label>Nom / Prénom
+        <input type="text" name="nom" required>
+    </label>
+    <label>Email
+        <input type="email" name="email" required>
+    </label>
+    <label>Message
+        <textarea name="message" rows="5" required></textarea>
+    </label>
+    <button type="submit" class="btn primary">Envoyer</button>
+</form>
+{% endblock %}
